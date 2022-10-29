@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+ 
+    <link
+        rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <link rel="stylesheet" href="style.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1> Mook's Wordle </h1>
+    <p><button class="restartbutton" onClick="window.location.reload();">New Game</button></p>
+
+    <h2 id="word-reveal">  </h2>
+    <h2 id="translation">  </h2>
+
+    <div id="game-board">
+
+    </div>
+    <div id="keyboard-cont">
+        <div name="non-shift" class="first-row">
+            <button class="keyboard-button">ภ</button>
+            <button class="keyboard-button">ถ</button>
+            <button class="keyboard-button">ุ</button>
+            <button class="keyboard-button">ึ</button>
+            <button class="keyboard-button">ค</button>
+            <button class="keyboard-button">ต</button>
+            <button class="keyboard-button">จ</button>
+            <button class="keyboard-button">ข</button>
+            <button class="keyboard-button">ช</button>
+            <button class="keyboard-button">Del</button>
+        </div>
+        <div name="non-shift" class="second-row">
+            <button class="keyboard-button">ไ</button>
+            <button class="keyboard-button">ำ</button>
+            <button class="keyboard-button">พ</button>
+            <button class="keyboard-button">ะ</button>
+            <button class="keyboard-button">ั</button>
+            <button class="keyboard-button">ี</button>
+            <button class="keyboard-button">ร</button>
+            <button class="keyboard-button">น</button>
+            <button class="keyboard-button">ย</button>
+            <button class="keyboard-button">บ</button>
+            <button class="keyboard-button">ล</button>
+        </div>
+        <div name="non-shift" class="third-row">
+            <button class="keyboard-button">ฟ</button>
+            <button class="keyboard-button">ห</button>
+            <button class="keyboard-button">ก</button>
+            <button class="keyboard-button">ด</button>
+            <button class="keyboard-button">เ</button>
+            <button class="keyboard-button">้</button>
+            <button class="keyboard-button">่</button>
+            <button class="keyboard-button">า</button>
+            <button class="keyboard-button">ส</button>
+            <button class="keyboard-button">ว</button>
+            <button class="keyboard-button">ง</button>
+            <button class="keyboard-button">Enter</button>
+        </div>
+        <div name="non-shift" class="fourth-row">
+            <button class="keyboard-button">⇧</button>
+            <button class="keyboard-button">ผ</button>
+            <button class="keyboard-button">ป</button>
+            <button class="keyboard-button">แ</button>
+            <button class="keyboard-button">อ</button>
+            <button class="keyboard-button">ิ</button>
+            <button class="keyboard-button">ื</button>
+            <button class="keyboard-button">ท</button>
+            <button class="keyboard-button">ม</button>
+            <button class="keyboard-button">ใ</button>
+            <button class="keyboard-button">ฝ</button>
+        </div>
+        <div name="shift" class="first-row-shift">
+            <button class="keyboard-button">ฎ</button>
+            <button class="keyboard-button">ฑ</button>
+            <button class="keyboard-button">ธ</button>
+            <button class="keyboard-button">ู</button>
+            <button class="keyboard-button">๊</button>
+            <button class="keyboard-button">ณ</button>
+            <button class="keyboard-button">ญ</button>
+            <button class="keyboard-button">ฐ</button>
+            <button class="keyboard-button">ช</button>
+            <button class="keyboard-button">Del</button>
+        </div>
+        <div name="shift" class="second-row-shift">
+            <button class="keyboard-button">ฤ</button>
+            <button class="keyboard-button">ฆ</button>
+            <button class="keyboard-button">ฏ</button>
+            <button class="keyboard-button">โ</button>
+            <button class="keyboard-button">ฌ</button>
+            <button class="keyboard-button">็</button>
+            <button class="keyboard-button">๋</button>
+            <button class="keyboard-button">ษ</button>
+            <button class="keyboard-button">ศ</button>
+            <button class="keyboard-button">ซ</button>
+            <button class="keyboard-button">ฅ</button>
+            <button class="keyboard-button">Enter</button>
+        </div>
+        <div name="shift" class="third-row-shift">
+            <button class="keyboard-button">⇧</button>
+            <button class="keyboard-button">ฉ</button>
+            <button class="keyboard-button">ฮ</button>
+            <button class="keyboard-button">์</button>
+            <button class="keyboard-button">ฒ</button>
+            <button class="keyboard-button">ฬ</button>
+            <button class="keyboard-button">ฦ</button>
+        </div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>    
+</body>
+</html>
