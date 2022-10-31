@@ -25,6 +25,11 @@ document.getElementById("word-reveal").style.display = "none";
 document.getElementById("translation").textContent = translation;
 document.getElementById("translation").style.display = "none";
 
+function easyMode() {
+    document.getElementById("translation").style.display = "block";
+    console.log("easy mode fired")
+}
+
 
 
 
@@ -628,20 +633,5 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
     node.addEventListener('animationend', handleAnimationEnd, {once: true});
 });
 
-document.getElementById("myCheck").onclick = easyMode();
-function easyMode() {
-    var checkBox = document.getElementById("myCheck");
-    // Get the output text
-    var text = document.getElementById("translation");
-    console.log("easy mode execute")
 
-  
-    // If the checkbox is checked, display the output text
-    if (checkBox.checked == true){
-      text.style.display = "block";
-      console.log("easy mode enabled")
-    } else {
-      text.style.display = "none";
-    }
-}
 
